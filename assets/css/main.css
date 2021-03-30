@@ -201,6 +201,7 @@
 	}
 
 	p {
+        font-weight: 600;
 		margin: 0 0 0 0;
 	}
 
@@ -219,6 +220,7 @@
 		font-size: 2.5em;
 		letter-spacing: 0.22em;
 		margin: 0 0 0.525em 0;
+        font-weight: 800;
 	}
 
 	h2 {

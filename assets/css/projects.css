@@ -2995,10 +2995,10 @@ input, select, textarea {
 				background: #3c2c62;
 			}
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #8103FF, #8103FF);
-				background-image: -webkit-linear-gradient(to right, #8103FF, #8103FF);
-				background-image: -ms-linear-gradient(to right, #8103FF, #8103FF);
-				background-image: linear-gradient(to right, #8103FF, #8103FF);
+				background-image: -moz-linear-gradient(to right, #D0A9F5, #8103FF);
+				background-image: -webkit-linear-gradient(to right, #D0A9F5, #8103FF);
+				background-image: -ms-linear-gradient(to right, #D0A9F5, #8103FF);
+				background-image: linear-gradient(to right, #D0A9F5, #8103FF);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
