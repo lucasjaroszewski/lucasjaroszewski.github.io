@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
+
 <!--
 	Identity by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+
+<html lang="en">
 	<head>
 		<title>Lucas Jaroszewski</title>
 		<meta charset="utf-8" />
@@ -13,43 +15,74 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
 	</head>
 	<body class="is-preload">
+		<div id="wrapper">
+            <div id="languages">
+                <a href="#en" data-reload>English</a>
+                <a href="#pt" data-reload>Portuguese</a>
+            </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<section id="main">
+				<header>
+					<h1>Lucas Jaroszewski</h1>
+                    <p>Engineer, Self-taught programmer</p>
+				</header>
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<h1>Lucas Jaroszewski</h1>
-                            <p style="margin-bottom: 1.5em">Civil Engineer, Self-taught programmer</p>
-						</header>
+				<footer>
+					<ul class="icons">
+                        <li>
+                            <a href="projects.html" class="icon solid fa-code"></a>
+                            <p id="projects">Projects</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/lucasjaroszewski" class="icon brands fa-github"></a>
+                            <p>Github</p>
+                        </li>
+						<li>
+                            <a href="https://www.linkedin.com/in/lucasjaroszewski/" class="icon brands fa-linkedin-in"></a>
+                            <p>LinkedIn</p>
+                        </li>
+                        <li>
+                            <a href="resume.pdf" class="icon solid fa-file"></a>
+                            <p id="resume">Resume</p>
+                        </li>
+					</ul>
+				</footer>
+			</section>
 
-						<footer>
-							<ul class="icons">
-                                <li><a href="projects.html" class="icon solid fa-code">Projects</a></li>
-                                <li><a href="https://github.com/lucasjaroszewski" class="icon brands fa-github">Github</a></li>
-								<li><a href="https://www.linkedin.com/in/lucasjaroszewski/" class="icon brands fa-linkedin-in">Linkedin</a></li>
-                                <li><a href="resume.pdf" class="icon solid fa-file">Resume</a></li>
-							</ul>
-						</footer>
-					</section>
+			<footer id="footer"></footer>
+		</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			}
 
-						</ul>
-					</footer>
+            // Define language reload anchors
+            var dataReload = document.querySelectorAll("[data-reload]");
 
-			</div>
+            // Translations
+            var language = {
+                pt: {
+                    projetos: "projetos",
+                    curriculo: "currículo",
+                }
+            }
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+            // Define language via window hash
+            if (window.location.hash) {
+                if (window.location.hash === "#pt") {
+                    projects.textContent = language.pt.projetos;
+                    resume.textContent = language.pt.curriculo;
+                }
+            }
 
+            // Define language reload illiteration
+            for (i = 0; i <= dataReload.length; i++) {
+                dataReload[i].onclick = function() {
+                    location.reload(true);
+                }
+            }
+		</script>
 	</body>
 </html>
