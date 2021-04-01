@@ -16,11 +16,14 @@
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
-            <div id="languages">
-                <a href="#en" data-reload>English</a>
-                <a href="#pt" data-reload>Portuguese</a>
-            </div>
-
+            <section id="languages">
+                <div class="us-lang">
+                    <a id="english" href="#en" data-reload>English</a>
+                </div>
+                <div class="br-lang">
+                    <a id="portuguese" href="#pt" data-reload>Portuguese</a>
+                </div>
+            </section>
 			<section id="main">
 				<header>
 					<h1>Lucas Jaroszewski</h1>
@@ -71,6 +74,8 @@
                     curriculo: "currículo",
                     curriculoHREF: "curriculo.pdf",
                     titulo: "Engenheiro, programador autodidata",
+                    ingles: "inglês",
+                    portugues: "português"
                 }
             }
 
@@ -82,6 +87,8 @@
                     resume.textContent = language.pt.curriculo;
                     resumelink.href = language.pt.curriculoHREF;
                     job.textContent = language.pt.titulo;
+                    english.textContent = language.pt.ingles;
+                    portuguese.textContent = language.pt.portugues;
                 }
             }
 
