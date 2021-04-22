@@ -920,7 +920,7 @@
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-		padding: 4.5em 3em 3em 3em ;
+		padding: 0 3em 3em 3em ;
 		border-radius: 4px;
 		cursor: default;
 		max-width: 100%;
@@ -1051,42 +1051,20 @@
     color: #fff;
 }
 
-.us-lang {
+.lang-wrap {
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    line-height: 2.1;
-    width: 120px;
+    white-space: nowrap;
 }
 
-.us-lang p {
-    margin: 0;
+.lang-wrap img {
+    vertical-align: middle;
 }
 
-.us-lang:before {
+.lang-wrap:before {
     content: '';
     display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
 }
 
-.br-lang {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    line-height: 2.1;
-    width: 160px;
-}
-
-.br-lang p {
-    margin: 0;
-}
-
-.br-lang:before {
-    content: '';
-    display: block;
-    width: 32px;
-    height: 32px;
-    background-image: url(https://www.countryflags.io/br/flat/32.png);
+.lang-wrap a {
+    vertical-align: middle;
 }

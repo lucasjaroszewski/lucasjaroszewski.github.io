@@ -19,7 +19,7 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Projects</a></li>
+							<li><a id="sidetext" href="#intro">About Me</a></li>
 							<li><a href="#one">1. Anaden-Tracker</a></li>
 							<li><a href="#two">2. Due Gatti</a></li>
 						</ul>
@@ -33,11 +33,12 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style2 fullscreen fade-up">
 						<div class="inner">
-							<h1>Projects</h1>
+							<h1 id="aboutme">About me</h1>
 							<p id="introduction">
-                                Interested about learning more about programming, I have been developing web applications
-                                from ideas that could benefit other people, you can see below more information about each
-                                project and the technologies I'm comfortable using.
+                                Being an Engineer I always tried to learn programs and tools that could help my career.
+                                One day I discovered Unreal Engine 4, where I had my first contact with programming, and I realized
+                                that there was no limit to what I could do. A place where I could create new tools and not just become
+                                an interpreter of them. Since then, the desire to learn to program has become an obsession.
                             </p>
 						</div>
 					</section>
@@ -49,14 +50,12 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Anaden Tracker</h2>
-									<p>
+									<p id="anadentracker">
                                         A web app that helps <i>Another Eden: The Cat Beyond Time and Space</i>'s players
                                         track of their progress in-game. Every page has a dynamic table rendered with
                                         JQuery's plugin DataTables that receives player's input in an efficient way. Currently,
                                         it is in development.
                                     </p>
-
-                                    <p style="margin-bottom: 0.5rem">Languages</p>
 
                                     <div class="progress" style="margin-bottom: 0.5rem">
                                       <div class="progress-bar first" style="width:70%;"></div>
@@ -86,7 +85,7 @@
                             <div class="content">
                                 <div class="inner">
                                     <h2>Due Gatti</h2>
-                                    <p>
+                                    <p id="duegatti">
                                         An e-commerce web app for a well-known neighbourhood store. With the beginning of the
                                         pandemic, there was a need for innovation as the store had to keep their doors closed.
                                         The website was built with Django as back-end and VueJS as front-end, relying on Stripe
@@ -117,7 +116,7 @@
                 <!-- Footer -->
                     <section id="intro" class="wrapper style2 fade-up">
                         <div class="inner">
-                            <p>Check out my <a href="https://github.com/lucasjaroszewski/">GitHub Page</a> for smaller projects!</p>
+                            <p id="github">Check out my <a href="https://github.com/lucasjaroszewski/">GitHub Page</a> for more projects!</p>
                             <ul class="actions">
                                 <li><a href="index.html" class="button scrolly">Back to main page</a></li>
                             </ul>
@@ -141,7 +140,22 @@
                 // Translations
                 var language = {
                     pt: {
-                        introducao: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                        introducao: "Sendo Engenheiro sempre procurei aprender programas e ferramentas que pudessem me"
+                        + " auxiliar em minha carreira. Um dia descobri o Unreal Engine 4, onde tive meu primeiro contato"
+                        + " com programação, e percebi que não tinha limites do que eu poderia fazer. Um lugar onde eu poderia"
+                        + " criar novas ferramentas e não me tornar apenas um interpretador delas. Desde então, a vontade"
+                        + " de aprender a programar se tornou uma obsessão.",
+                        sobremim: "Sobre mim",
+                        sidetexto: "Sobre mim",
+                        anadentracker: "Um website que ajuda jogadores a acompanharem seu progresso no jogo Another Eden:"
+                        + " The Cat Beyond Time and Space. Cada página possui uma tabela dinâmica renderizada com o plugin"
+                        + " DataTables do JQuery, recebendo cada entrada que o jogador envia de forma eficiente. Atualmente,"
+                        + " o projeto está em desenvolvimento.",
+                        duegatti: "Um e-commerce para uma renomada cafeteria em Porto Alegre. Com o início da pandemia,"
+                        + " houve necessidade de uma inovação, pois a cafeteria tinha que manter as portas fechadas. O site"
+                        + " foi construído com o Django Framework como back-end e VueJS como front-end, contando com o Stripe"
+                        + " para pagamentos online.",
+                        github: "Você pode ver outros projetos em meu Github."
                     }
                 }
 
@@ -149,6 +163,11 @@
                 if (window.location.hash) {
                     if (window.location.hash === "#pt") {
                         introduction.textContent = language.pt.introducao;
+                        aboutme.textContent = language.pt.sobremim;
+                        sidetext.textContent = language.pt.sidetexto;
+                        anadentracker.textContent = language.pt.anadentracker;
+                        duegatti.textContent = language.pt.duegatti;
+                        github.textContent = language.pt.github;
                     }
                 }
 
