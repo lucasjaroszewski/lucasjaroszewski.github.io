@@ -34,20 +34,20 @@
 
 				<footer>
 					<ul class="icons">
-                        <li>
-                            <a id="projectslink" href="projects.html" class="icon solid fa-code"></a>
-                            <p id="projects">Projects</p>
+						<li>
+                            <a id="aboutmelink" href="aboutme.html" class="icon solid fa-user-graduate"></a>
+                            <p id="aboutme">About Me</p>
                         </li>
                         <li>
-                            <a href="https://github.com/lucasjaroszewski" class="icon brands fa-github"></a>
+                            <a target="_blank" href="https://github.com/lucasjaroszewski" class="icon brands fa-github"></a>
                             <p>Github</p>
                         </li>
 						<li>
-                            <a href="https://www.linkedin.com/in/lucasjaroszewski/" class="icon brands fa-linkedin-in"></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/lucasjaroszewski/" class="icon brands fa-linkedin-in"></a>
                             <p>LinkedIn</p>
                         </li>
                         <li>
-                            <a id ="resumelink" href="resume.pdf" class="icon solid fa-file"></a>
+                            <a target="_blank" id ="resumelink" href="assets/documents/resume.pdf" class="icon solid fa-file-alt"></a>
                             <p id="resume">Resume</p>
                         </li>
 					</ul>
@@ -71,10 +71,12 @@
             // Translations
             var language = {
                 pt: {
-                    projetos: "Projetos",
-                    projetosHREF: "projects.html#pt",
+                    //projetos: "Projetos",
+                    //projetosHREF: "projects.html#pt",
+					sobremim: "Sobre Mim",
+					sobremimHREF: "sobremim.html",
                     curriculo: "Currículo",
-                    curriculoHREF: "curriculo.pdf",
+                    curriculoHREF: "assets/documents/curriculo.pdf",
                     titulo: "Engenheiro, programador autodidata",
                     ingles: "Inglês",
                     portugues: "Português"
@@ -84,8 +86,10 @@
             // Define language via window hash
             if (window.location.hash) {
                 if (window.location.hash === "#pt") {
-                    projects.textContent = language.pt.projetos;
-                    projectslink.href = language.pt.projetosHREF;
+                    //projects.textContent = language.pt.projetos;
+                    //projectslink.href = language.pt.projetosHREF;
+					aboutme.textContent = language.pt.sobremim;
+					aboutme.href = language.pt.sobremimHREF;
                     resume.textContent = language.pt.curriculo;
                     resumelink.href = language.pt.curriculoHREF;
                     job.textContent = language.pt.titulo;
