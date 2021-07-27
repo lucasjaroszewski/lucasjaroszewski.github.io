@@ -1251,7 +1251,7 @@ input::-moz-focus-inner {
 }
 
 .section-intro.with-bottom-sep {
-	padding-bottom: 4.2rem;
+	padding-bottom: 0.5rem;
 	position: relative;
 }
 
@@ -2194,7 +2194,7 @@ header .header-logo a {
 
 #portfolio .bricks-wrapper .brick {
 	float: left;
-	width: 25%;
+	width: 20%;
 	padding: 0.5rem;
 	margin: 0;
 	opacity: 0.85;
@@ -2518,6 +2518,7 @@ header .header-logo a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
+	height: 100vh;
 	padding: 6rem 0;
 	position: relative;
 }
