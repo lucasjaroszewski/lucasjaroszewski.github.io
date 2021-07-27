@@ -2242,7 +2242,7 @@ header .header-logo a {
 }
 
 .bricks-wrapper .item-wrap .overlay::after {
-	content: "+";
+	content: "";
 	font-family: sans-serif;
 	font-size: 2.4rem;
 	z-index: 1;
@@ -2314,7 +2314,7 @@ header .header-logo a {
 	text-align: center;
 	z-index: 2;
 	position: absolute;
-	top: 2.2rem;
+	top: 0.5rem;
 	right: 1rem;
 }
 
